@@ -121,8 +121,9 @@
     const channel_id = "UCxMPAmXdISORf9Bg9y48dlg";
     fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channel_id}&key=${api_key}`)
     .then(response => response.json())
-    .then(data => console.log(data));
-    var sunflower = 11;
+    .then(data => {
+        var sunflower = data.items[0].statistics.subscriberCount;
+    });
 
     for (var i = 0; i < 100; i++) {
         if (i < sunflower) {
