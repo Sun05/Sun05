@@ -130,9 +130,11 @@
         .then(data => {
             const count = data.items[0].statistics.subscriberCount;
             updateCount(count);
+            drawFlower();
         });
 
-    for (var i = 0; i < 100; i++) {
+    drawFlower = () => {
+        for (var i = 0; i < 100; i++) {
         if (i < sunflower) {
             var itm = document.getElementById("Capa_1");
             var cln = itm.cloneNode(true);
@@ -146,5 +148,6 @@
         }
     }
     document.getElementById("Capa_1").remove();
+    }
 
 </script>
