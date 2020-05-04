@@ -119,8 +119,8 @@
 <script>
     var sunflower = 11;
 
-    for (var i = 0; i < 20; i++) {
-        if (i < sunflower - 1) {
+    for (var i = 0; i < 100; i++) {
+        if (i < sunflower) {
             var itm = document.getElementById("Capa_1");
             var cln = itm.cloneNode(true);
             document.body.appendChild(cln);
@@ -132,4 +132,5 @@
             document.body.appendChild(cln);
         }
     }
+    document.getElementById("Capa_1").remove();
 </script>
