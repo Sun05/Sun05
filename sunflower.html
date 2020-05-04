@@ -117,8 +117,8 @@
 
 
 <script>
-    const apikey = "AIzaSyCT3AHrQD4LUBO12lO13nPsG6VinJ1dHcE";
-    const channelid = "UCxMPAmXdISORf9Bg9y48dlg";
+    const api_key = "AIzaSyCT3AHrQD4LUBO12lO13nPsG6VinJ1dHcE";
+    const channel_id = "UCxMPAmXdISORf9Bg9y48dlg";
     fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channel_id}&key=${api_key}`)
     .then(response => reseponse.json())
     .then(data => console.log(data));
