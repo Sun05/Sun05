@@ -117,13 +117,18 @@
 
 
 <script>
+    var sunflower = 0;
+    updateCount = (c) => {
+        sunflower = c;
+    }
     const api_key = "AIzaSyCT3AHrQD4LUBO12lO13nPsG6VinJ1dHcE";
     const channel_id = "UCxMPAmXdISORf9Bg9y48dlg";
     fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channel_id}&key=${api_key}`)
-    .then(response => response.json())
-    .then(data => {
-        var sunflower = data.items[0].statistics.subscriberCount;
-    });
+        .then(response => response.json())
+        .then(data => {
+            var count = data.items[0].statistics.subscriberCount;
+            updateCount(count);
+        });
 
     for (var i = 0; i < 100; i++) {
         if (i < sunflower) {
@@ -139,9 +144,5 @@
         }
     }
     document.getElementById("Capa_1").remove();
-    
+
 </script>
-
-
-
-
