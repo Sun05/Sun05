@@ -1,0 +1,86 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 600px;
+    width: 800px;
+    background: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 800px 600px;
+}
+
+.desktop {
+    height: 95%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0px repeat(3, 100px);
+    grid-template-rows: 0px repeat(3, 100px);
+    gap: 5px;
+}
+
+.desktopicon1 {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.desktopicon2 {
+    grid-row: 2;
+    grid-column: 3;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.desktopicon3 {
+    grid-row: 2;
+    grid-column: 4;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.desktopicon4 {
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.desktop-para {
+    height: 30px;
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+    color: white;
+    text-shadow: 1px 1px black;
+    line-height: 30px;
+}
+
+.desktop-image {
+    height: 70px;
+}
+
+.taskbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(238, 132, 32, 0.9);
+    height: 5%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}

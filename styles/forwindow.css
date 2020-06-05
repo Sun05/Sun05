@@ -1,0 +1,50 @@
+html,
+body {
+    height: 600px;
+    width: 800px;
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: auto 30px 30px 30px 0px;
+    background-color: #FFFFFF;
+    height: 5%;
+}
+
+img {
+    width: 10px;
+    height: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.toppara {
+    text-shadow: 1px 0px #90DBFF;
+    text-shadow: -1px 0px #FFFFB6;
+    align-self: center;
+    padding-left: 20px;
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+.bottom {
+    background-color: #F0F0F0;
+    width: 100%;
+    height: 90%;
+}
+
+.alll {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    border: 1px inset #707070;
+    box-sizing: border-box;
+}
+
+.taskbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(238, 132, 32, 0.9);
+    height: 5%;
+    width: 100%;
+}
